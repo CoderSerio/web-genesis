@@ -1,3 +1,3 @@
-import { sendMsg } from "./msg.js";
+import sendMsg from "./msg.js";
 
-sendMsg("Hello");
+sendMsg("Hello WebGenesis!!!");
