@@ -11,3 +11,10 @@ There are core dependencies we use in this program:
 - `@babel/traverse`：traverse the AST.
 - `tapable`: inject code in specific stages to implement the plugin mechanism.
 
+## Test
+
+Change directory to `/example` and run the command below:
+
+```shell
+npm run build
+```
