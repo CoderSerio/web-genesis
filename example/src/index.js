@@ -1,3 +1,6 @@
 import sendMsg from "./msg.js";
+import jsonData from "./data.json";
 
-sendMsg("Hello WebGenesis!!!");
+const data = JSON.parse(jsonData);
+
+sendMsg(`Hello ${data.name}!!!`);
