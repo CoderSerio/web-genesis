@@ -1,5 +1,5 @@
 const path = require("path");
-
+const HtmlWebGenesisPlugin = require("./plugins/html-web-genesis-plugin.cjs");
 const webpack = require("../lib/index.js");
 
 const config = {
@@ -8,6 +8,11 @@ const config = {
     path: path.resolve(__dirname, "./dist"),
     filename: "bundle.cjs",
   },
+  plugins: [
+    new HtmlWebGenesisPlugin({
+      filename: "index.html",
+    }),
+  ],
 };
 
 webpack(config);
